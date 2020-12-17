@@ -2,13 +2,21 @@
 <html>
     <head>
         <title>Basic HTML Page</title>
-        <meta></meta>
         <style>
+            table,th,td{
+                border: 0.5px solid gray;
+                border-collapse: collapse;
+            }
+
+            th , td {
+                padding: 15px;
+            }
+
         </style>
 
         <h1>Basic HTML page</h1>
 
-        <table>
+        <table style="width: 50%;" >
             <tr>
                 <th>Name</th>
                 <th>Lastname</th>
