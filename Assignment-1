@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Basic HTML Page</title>
+        <meta></meta>
+        <style>
+        </style>
+
+        <h1>Basic HTML page</h1>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Hobbies</th>
+            </tr>
+            <tr>
+                <td>Sriram</td>
+                <td>S</td>
+                <td>21</td>
+                <td>Basketball</td>
+            </tr>
+
+            <tr>
+                <td>karthi</td>
+                <td>k</td>
+                <td>21</td>
+                <td>Driving</td>
+            </tr>
+
+            <tr>
+                <td>Teja</td>
+                <td>J</td>
+                <td>20</td>
+                <td>Basketball</td>
+            </tr>
+        </table>
+    </head>
+</html>
