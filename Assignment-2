@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account Form</title>
+    </head>
+    <body>
+        <h1>Create Account Form</h1>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+            <label for="pwd">Confirm Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br>
+            <label for="quantity">Mobilenumber</label><br>
+            <input type="number" id="quantity" name="quantity"><br>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="others">Male</label><br>            
+            <label for="birthday">DOB</label><br>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="games">Liked Games:</label>
+
+            <select id="games" name="games">
+                <option value="basketball">Basketball</option>
+                <option value="cricket">criket</option>
+                <option value="kabadi">kabadi</option>
+                <option value="hockey">hockey</option>
+            </select><br>
+            <input type="checkbox" id="activity" name="activity" value="active">
+            <label for="activity">Is active</label><br>
+            <input type="submit" value="submit"><br>
+        </form>
+    </body>
+</html> 
