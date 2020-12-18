@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Designing a header for a page</title>
+        <link rel="stylesheet" href="style.css"> 
+        <style>
+            h1{
+                color: rgb(0, 128, 49);
+                text-align: left;
+            }
+
+            .note {
+                letter-spacing: 4px;
+                padding-right: 770px;
+            }
+
+            
+            .center{
+                background-color: green;
+                color: white;
+                padding: 10px;
+                margin: 8px;
+                border: none;
+                cursor: pointer;
+                width: auto;
+            } 
+    
+            .textcenter{
+                text-align: right;
+            }
+        </style> 
+    </head>
+    <body>
+    <h1>User Management</h1>
+    <span class="note">THE WORLD'S  LARGEST DEVELOPER SITE</span>
+    <button type="button">SIGN UP</button>
+    <button type="button">LOG IN</button>
+    <div class="Designing-header">
+    <ul>
+    <li class="active"><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JAVASCRIPT</a></li>
+    <li><a href="#">SQL</a></li>
+    <li><a href="#">PYTHON</a></li>
+    <li><a href="#">PHP</a></li>
+    <li><a href="#">BOOTSTRAP</a></li>
+    <li><a href="#">HOW TO</a></li>
+    <li><a href="#">W3.CSS</a></li>
+    <li><a href="#">JQUERY</a></li>
+    <li><a href="#">JAVA</a></li>
+    <li><a href="#">EXERCISES</a></li>
+    <li><a href="#">REFERENCES</a></li>
+    <li><a href="#">CERTIFICATES</a></li>
+    </ul>
+    </div>
+
+    
+    </body>
+    
+</html>
