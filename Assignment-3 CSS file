@@ -1,0 +1,52 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Designing-header
+{
+    background-color: gray;
+    text-align: center;
+}
+.Designing-header ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.Designing-header ul li
+{
+    width: 100%;
+    margin: 15px;
+    padding: 2px;
+}
+
+.Designing-header ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.Designing-header ul li:hover
+{
+    background-color: rgb(25, 204, 25);
+    border-radius: none;
+} 
+.dropdown
+{
+    display: none;
+}
+.Designing-header ul li:hover .dropdown
+{
+    display: block;
+    position: absolute;
+    background-color: green;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.Designing-header ul li:hover .dropdown ul
+{
+    display: block;
+    margin: 10px;
+}
