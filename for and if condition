@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examples for JAVASCRIPT</title>
+
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JAVA SCRIPT</h1>
+
+    <script type="text/javascript">
+
+            var even=[];
+            var odd=[];
+            for (var i=50; i<=100; i++)
+            {
+            if (i % 2 === 0)
+                {
+                    even.push(i);
+                }
+                else{
+                    odd.push(i);
+                }
+            }
+            console.log(even);
+            console.log(odd);
+            </script>
+
+    </body>
+            
+</html>
