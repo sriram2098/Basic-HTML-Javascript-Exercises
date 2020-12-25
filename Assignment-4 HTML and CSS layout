@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript tutorials</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JAVASCRIPT
+        </h1>
+        
+        <div id="div">Tutorials</div>
+        <div id="div">Practice</div>
+
+        <span class="span">span 1</span>
+        <span class="spanclass">span 2</span>
+        <span class="span">span 3</span>
+
+        <input id="firstname"  name="fname" placeholder="Enter First Name"/>
+        <input id="lastname"  name="lname" placeholder="Enter Last Name"/>
+            <table class="student" id="student">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Education</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sriram</td>
+                        <td>Bsc</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Karthik</td>
+                        <td>BCA</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teja</td>
+                        <td>Bsc</td>
+                        <td>21</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>  
+                <input type="radio" id="male" name="gender" value="others">
+                <label for="others">Others</label><br>
+
+                <label>Select Education :</label>
+                <select id="education" name="education">
+                    <option value="select">SELECT</option>
+                    <option value="bsc">Bsc (Computer Science)</option>
+                    <option value="bca">BCA</option>
+                    <option value="msc">MSC (Computer Science)</option>
+                    <option value="mca">MCA</option>
+                </select>
+                <br>
+
+                <label>fresher : <input type="checkbox" id="mycheck"></label><br>
+                <label>Experience : <input type="checkbox" id="mycheck"></label><br>
+                <label>Pursuing : <input type="checkbox" id="mycheck"></label>
+                
+
+    </body>
+    
+    <script type="text/javascript">
+
+       $(".spanclass").each(function (){
+           if($(this).text() == "span 2"){
+               $(this).html("<b>" +$(this).text() + "</b>")
+           }
+       })
+
+       $("[type='radio']").val() //value of the radio.
+
+       $("[type='male']").val("gents")  //change the value of the selected type.
+
+       $("[value='bca']").val() //this value changed but the value doesn't show. It will show undefined.
+
+       $("[id='mycheck']").val() //get the element in checkbox.
+
+       $("[id='mycheck']").val("single") //change the value in checkbox.
+
+
+    </script>
+    
+
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//CSS LAYOUT//
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    border: 2px;
+    width: 100%;
+    color: green;
+}
+
+.head1{
+    border: 2px;
+    width: 40%;
+    padding: 4px;
+}
+
+.button {
+   border-radius: 12px;
+   padding: 4px;
+   
+  }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    border: 3px;
+    width: 100%;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 112px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+ ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: black
+    ;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column.middle {
+  width: 60%;
+  padding: 10px;
+  height: 300px;
+  padding: 16px;
+  text-align: center;
+
+
+}
+.content{
+  width: 98%;
+    margin-left: 34%;
+}
+.column.left, .left-column{
+    
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    overflow: scroll;
+    height: 100%;
+    display: inline-grid;
+    position: fixed;
+    padding-bottom: 0%;
+    top: 135px;
+  }
+  .sticky#menu-left{
+    top: 54px;
+  }
+
+  
+  ol center{  
+    text-align: center;
+    
+  }
+  li a {
+    display: block;
+    color:black;
+    padding: 8px;
+    text-decoration: none;
+    
+  }
+  .left-column, {
+    float:left;
+
+  }
+  /* Change the link color on hover */
+  li a:hover {
+    background-color:#555;
+    color: white;
+  }
+
+  .column.right{
+    text-align: center;
+    background-color: white;
+    width: 20%;
+    height:fit-content;
+    overflow: visible;
+    float:right;
+    border: 2px ;
+    }
+
+    .footer {
+      position: fixed;;
+      background-color: #777;
+      padding: 5px;
+      text-align: center;
+      color: white;
+      width: 100%;
+      bottom: 0;
+      right: 0px;
+      border: 2px;
+  }
+  
