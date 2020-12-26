@@ -96,9 +96,18 @@
 
         sports.push("Football");//push the elements in last.
 
+        Array.prototype.insert = function ( index, item ) {
+            this.splice( index, 0, item );                  //push the elements in middle.
+        };
+
+
+
         sports.shift(); //remove the first element.
 
         sports.pop("Basketball");//remove the elements in last.
+
+
+        sports.splice(3);   //it will remove the elements in middle.
 
 
 
