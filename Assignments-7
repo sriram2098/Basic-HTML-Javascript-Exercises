@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVA SCRIPT</title>
+
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JAVA SCRIPT
+        </h1>
+    </body>
+
+    <script type="text/javascript">
+        
+        console.log("if and else loop......");
+
+        var pen=9;
+        if(pen>=10){
+        console.log("you are eligible");
+        }
+        else{
+            console.log("you are not eligible");
+        }
+
+        console.log("for loop.......");
+        for(var i=50; i<=60; i++)        
+        {
+        if(i == 55){
+        continue;
+        }
+        console.log(i);
+        }
+        console.log("while loop..........");
+        var i=60;
+        while(i<=70){
+            console.log(i);
+            if(i == 65)
+            break;
+            i++;
+        }
+
+        console.log("do while loop.............");
+
+        var i=9;
+        do{
+            console.log(i);
+            i++;
+        }
+        while(i<=10)
+
+        console.log("switch case..........")
+        var car = 1;
+        switch(car){
+                case 0:
+                console.log("BMW");
+                break;
+                case 1:
+                console.log("BENZ");
+                break;
+                case 2:
+                console.log("HYNDAI");
+                break;
+                case 3:
+                console.log("HONDA");
+                break;
+                case 4:
+                console.log("TATA");
+                break;
+                case 5:
+                console.log("TESLA");
+                break;
+                default:
+                console.log("NO CAR");
+                break;
+        }
+
+        console.log("object........")
+        
+        var user={
+            firstname:"sri",
+            lastname:"ram"
+        };
+
+        for(n in user){
+            console.log(n);
+        }
+
+        var sports = ["Basketball", "Cricket", "kabbadi"];
+
+        sports.push("Basketball");//push the elements in first.
+
+        sports.push("Football");//push the elements in last.
+
+        sports.shift(); //remove the first element.
+
+        sports.pop("Basketball");//remove the elements in last.
+
+
+
+    </script>
+</html>
