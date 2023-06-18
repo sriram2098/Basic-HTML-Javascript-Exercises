@@ -1,1 +1,2 @@
-# Batch-9
+# Basic HTML and JavaScript Exercises
+
